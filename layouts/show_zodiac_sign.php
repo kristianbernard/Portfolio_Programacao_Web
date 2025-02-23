@@ -5,7 +5,7 @@
   echo("<p>Data é inválida</p> <a href='index.php'");
  }
 
- $signos = simplexml_load_file("layouts/signos.xml");
+ $signos = simplexml_load_file("signos.xml");
  function verificar_signo($data, $inicio, $fim){
     $ano = $data->format('Y');
     $data_inicio = DateTime::createFromFormat('d/m/Y', "$inicio/$ano");
